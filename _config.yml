@@ -36,4 +36,4 @@ hljs:
 
 # atom: atom.xml # website feed.
 
-favicon: /img/favicon.ico
+favicon: /img/favicon.ico #修改对应文件夹图标即能修改。
