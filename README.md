@@ -3,6 +3,7 @@
 <h3 align="center">A minimalist, focused writing Hexo theme.</h3>
 <center>基于wisp-x大佬的july主题进行了符合个人的一些小修改，并保存在这里当作备份。😀</center>
 
+---
 
 ![](./source/img/preview.jpg)
 
