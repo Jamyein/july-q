@@ -33,7 +33,7 @@ a:focus,
 a:hover {
   transition: 0.35s;
   text-decoration: none;
-  color: #5193de;
+  color: #AB545A;
 }
 a:focus {
   outline-style: none;
@@ -88,7 +88,7 @@ html {
 }
 body {
   overflow-y: scroll;
-  font: 1.1em "Vollkorn", Palatino, Times, "Noto Serif SC", Lusitana, serif, "PT Sans", source-han-sans-simplified-c, "PingFang SC", "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei", SimSun;
+  font: 1.1em Georgia, "PingFang SC", "Vollkorn", Palatino, Times, "Noto Serif SC", Lusitana, serif, "PT Sans", source-han-sans-simplified-c, "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei", SimSun;
   color: #333;
   line-height: 1.4;
   text-align: justify;
@@ -155,31 +155,38 @@ body {
 #menu-outer #menu-inner a.active {
   color: #3e3e3e;
 }
-#menu-outer.fade-show {
+/*#menu-outer.fade-show {
   transition: background-color 3s, max-width 1s;
   max-width: 100%;
   background-color: #363636;
-}
+}*/
 #menu-outer.fade-show #menu-inner a {
-  color: white;
+  color: black;
 }
 #content-outer {
   width: 90%;
   margin: 2rem auto;
 }
+.recent-posts,
+.archivecs,
+.category,
+.tag {
+  width: 80%;
+  margin: 0 auto;
+}
 #content-outer #content-inner h3.widget-title {
-  text-align: center;
   margin-bottom: 0.5rem;
   color: #868686;
+  /*margin-left: 15rem;*/
 }
 #content-outer #content-inner .recent-post-item,
 #content-outer #content-inner .archive-item,
 #content-outer #content-inner .category-item,
 #content-outer #content-inner .tag-item {
-  text-align: center;
-  line-height: 1.5;
-  margin-top: 0.25rem;
+  line-height: 1.6;
+  
 }
+
 #content-outer #content-inner .recent-post-item a,
 #content-outer #content-inner .archive-item a,
 #content-outer #content-inner .category-item a,
@@ -196,7 +203,9 @@ body {
 #content-outer #content-inner .archive-item time,
 #content-outer #content-inner .category-item time,
 #content-outer #content-inner .tag-item time {
+  margin-right: 20px;
   font-size: 1rem;
+  line-height: 1.6;
   color: #a0aec0;
 }
 #content-outer #content-inner #archive {
@@ -211,6 +220,7 @@ body {
 }
 ul.archive-list {
   list-style: none;
+  color: #008B8B;
 }
 #bottom-outer {
   margin: 8rem auto;
@@ -224,9 +234,9 @@ article#post > h1#post-title {
   font-size: 1.8rem;
 }
 article#post > #post-date {
-  display: block;
-  color: #a0aec0;
-  margin: 0.5rem 0 3rem;
+  display: flex;
+  color: #AB545A;
+  margin: 0.5rem 0 2rem
 }
 article#post > #post-content {
   line-height: 1.625;
@@ -240,13 +250,17 @@ article#post > #post-content {
 #paginator a {
   margin: 0 0.3rem;
 }
+.post-tags {
+  display: flex;
+  padding-left: 10px;
+}
 .markdown-body {
   margin: 0 auto;
   color: #555;
   line-height: 1.8;
   text-align: justify;
   word-wrap: break-word;
-  word-break: break-all;
+  /*word-break: break-all;*/
 }
 .markdown-body .highlight pre .language-seq,
 .markdown-body pre .language-seq,
@@ -261,9 +275,9 @@ article#post > #post-content {
   color: #f9f9f9;
 }
 .markdown-body img {
-  margin: 0.5rem 0;
-  box-shadow: 0 0 30px #ababab;
-  border-radius: 5px;
+  margin: 0.5rem auto;
+  /*box-shadow: 0 0 30px #ababab;*/
+  border-radius: 8px;
 }
 .markdown-body a:not([disabled]),
 .markdown-body a:not([disabled]):hover {
@@ -291,7 +305,7 @@ article#post > #post-content {
   right: 2.5rem;
   bottom: 2.5rem;
   border-radius: 50%;
-  background-color: #6a737d;
+  background-color: #815463;
   transition: all 0.3s;
   width: 30px;
   height: 30px;
@@ -343,4 +357,50 @@ article#post > #post-content {
 .icon-menu:before {
   content: "\e609";
 }
+.post-nav {
+  display: flex;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 5rem;
+  border-top: 1px;
+  line-height: 1.4;
+}
+.post-nav .post-nav-item {
+  border-bottom: 0;
+  padding-bottom: 10px;
+  width: 50%;
+  padding-top: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.post-nav .post-nav-item .post-title {
+  color: black;
+}
+.post-nav .post-nav-item:hover .post-title,
+.post-nav .post-nav-item:focus .post-title {
+  color: #d58700;
+  opacity: 0.9;
+}
+.post-nav .post-nav-item .nav-arrow {
+  color: gray;
+  margin-bottom: 3px;
+}
+.post-nav .post-nav-item:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.post-nav .post-nav-item:nth-child(even) {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 20px;
+}
+.post-nav .post-nav-item {
+  width: 100%;
+}
+.post-nav .post-nav-item:nth-child(even) {
+  border-left: 0;
+  padding-left: 0;
+  border-top: 1px;
+}
+
 /*# sourceMappingURL=july.css.map */

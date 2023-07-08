@@ -3,19 +3,19 @@ language: zh-CN
 
 # main menu navigation
 menu:
-  Home: /index.html
-  Archives: /archives/index.html
-  About: /about/index.html
+  主页: /index.html
+  归档: /archives/index.html
+  关于: /about/index.html
 
 site:
-  # banner: /img/banner.jpg # banner map of website. (please annotation this line if you don't need it)
-  avatar: https://www.gravatar.com/avatar/7a585313ed855e8d652cbb3154a6056e?s=300&d=mm&r=g # head portrait.
-  icp: 皖ICP备16011445号 # E-ICP prepared No.
+  banner: /img/banner.jpg # banner map of website. (please annotation this line if you don't need it)
+  avatar: https://i.postimg.cc/yNZKS2JQ/heard.jpg # head portrait.
 
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/markdown.css
   - /css/july.css
+  - /css/waline.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -35,3 +35,5 @@ hljs:
     copy: Copy Code
 
 # atom: atom.xml # website feed.
+
+favicon: /img/favicon.ico

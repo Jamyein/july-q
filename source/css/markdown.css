@@ -230,7 +230,7 @@
   line-height: inherit;
 }
 .markdown-body a {
-  color: #0366d6;
+  color: #008B8B;
   text-decoration: none;
 }
 .markdown-body a:hover {
@@ -330,7 +330,7 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Georgia, "PingFang SC", "Vollkorn",SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body .octicon {
@@ -403,9 +403,12 @@
   border: 0;
 }
 .markdown-body blockquote {
-  padding: 0 1em;
-  color: #6a737d;
-  border-left: 0.25em solid #dfe2e5;
+  padding: 2em 2em;
+  color: #343434;
+  line-height: 1.8;
+  border-radius: 8px;
+  background: #FEECD8;
+  display: inline-flex;
 }
 .markdown-body blockquote > :first-child {
   margin-top: 0;
