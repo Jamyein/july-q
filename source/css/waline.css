@@ -4,7 +4,7 @@
     --waline-light-grey: #999;
     --waline-dark-grey: #666;
     --waline-theme-color: #B57C82;
-    --waline-active-color: #2ecc71;
+    --waline-active-color: #7cb5b5;
     --waline-color: #444;
     --waline-bgcolor: #fff;
     --waline-bgcolor-light: #f8f8f8;
@@ -147,6 +147,7 @@
     cursor:not-allowed
    }
    .wl-btn.primary {
+    font-family:SimSun;
     border-color:var(--waline-theme-color);
     background:var(--waline-theme-color);
     color:var(--waline-white)
@@ -942,7 +943,7 @@
     background:none;
     color:#ccc;
     font-size:1em;
-    font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-family:SimSun, Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
     text-align:left;
     white-space:pre;
     word-spacing:normal;

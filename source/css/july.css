@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'Vollkorn';
   font-style: italic;
   font-weight: 400;
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 700;
   src: local('Vollkorn Bold'), local('Vollkorn-Bold'), url(https://fonts.gstatic.com/s/vollkorn/v10/0yb6GDoxxrvAnPhYGxGSTVg5jBA.ttf) format('truetype');
-}
+}*/
 *,
 :after,
 :before {
@@ -192,12 +192,52 @@ body {
 #content-outer #content-inner .category-item a,
 #content-outer #content-inner .tag-item a {
   color: #1a202c;
+  text-decoration: none;
 }
 #content-outer #content-inner .recent-post-item a:hover,
 #content-outer #content-inner .archive-item a:hover,
 #content-outer #content-inner .category-item a:hover,
 #content-outer #content-inner .tag-item a:hover {
-  color: #718096;
+  color: #815463;
+  text-decoration: underline;
+}
+#content-outer #content-inner .recent-post-item a:not([disabled]),
+#content-outer #content-inner .archive-item a:not([disabled]),
+#content-outer #content-inner .category-item a:not([disabled]),
+#content-outer #content-inner .tag-item a:not([disabled]),
+#content-outer #content-inner .archive-item a:not([disabled]):hover,
+#content-outer #content-inner .category-item a:not([disabled]):hover,
+#content-outer #content-inner .tag-item a:not([disabled]):hover,
+#content-outer #content-inner .recent-post-item a:not([disabled]):hover {
+  position: relative;
+  text-decoration: none;
+}
+#content-outer #content-inner .recent-post-item a:not([disabled])::after,
+#content-outer #content-inner .archive-item a:not([disabled])::after,
+#content-outer #content-inner .category-item a:not([disabled])::after,
+#content-outer #content-inner .tag-item a:not([disabled])::after,
+#content-outer #content-inner .category-item a:not([disabled]):hover::after,
+#content-outer #content-inner .archive-item a:not([disabled]):hover::after,
+#content-outer #content-inner .tag-item a:not([disabled]):hover::after,
+#content-outer #content-inner .recent-post-item a:not([disabled]):hover::after {
+  transition: width 0.35s;
+  content: "";
+  right: 0;
+  width: 0;
+  bottom: -2px;
+  position: absolute;
+  border-bottom: 1px solid;
+}
+#content-outer #content-inner .recent-post-item a:not([disabled]):hover::after,
+#content-outer #content-inner .archive-item a:not([disabled]):hover::after,
+#content-outer #content-inner .category-item a:not([disabled]):hover::after,
+#content-outer #content-inner .tag-item a:not([disabled]):hover::after,
+#content-outer #content-inner .category-item a:not([disabled]):hover:hover::after,
+#content-outer #content-inner .tag-item a:not([disabled]):hover:hover::after,
+#content-outer #content-inner .archive-item a:not([disabled]):hover:hover::after,
+#content-outer #content-inner .recent-post-item a:not([disabled]):hover:hover::after {
+  left: 0;
+  width: 100%;
 }
 #content-outer #content-inner .recent-post-item time,
 #content-outer #content-inner .archive-item time,
@@ -235,7 +275,7 @@ article#post > h1#post-title {
 }
 article#post > #post-date {
   display: flex;
-  color: #AB545A;
+  color: #7D7C7C;
   margin: 0.5rem 0 2rem
 }
 article#post > #post-content {
@@ -378,7 +418,7 @@ article#post > #post-content {
 }
 .post-nav .post-nav-item:hover .post-title,
 .post-nav .post-nav-item:focus .post-title {
-  color: #d58700;
+  color: #AB545A;
   opacity: 0.9;
 }
 .post-nav .post-nav-item .nav-arrow {

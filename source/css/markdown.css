@@ -2,16 +2,16 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #23241f;
+  background: #eaecef;
 }
 .hljs,
 .hljs-subst,
 .hljs-tag {
-  color: #f8f8f2;
+  color: #3c3c3b;
 }
 .hljs-emphasis,
 .hljs-strong {
-  color: #a8a8a2;
+  color: #848480;
 }
 .hljs-bullet,
 .hljs-link,
@@ -37,15 +37,15 @@
 .hljs-keyword,
 .hljs-name,
 .hljs-selector-tag {
-  color: #f92672;
+  color: #115864;
 }
 .hljs-attribute,
 .hljs-symbol {
-  color: #66d9ef;
+  color: #752544;
 }
 .hljs-class .hljs-title,
 .hljs-params {
-  color: #f8f8f2;
+  color: #243265;
 }
 .hljs-addition,
 .hljs-built_in,
@@ -57,7 +57,7 @@
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable {
-  color: #e6db74;
+  color: #8b3422;
 }
 .hljs-comment,
 .hljs-deletion,
@@ -330,7 +330,7 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Georgia, "PingFang SC", "Vollkorn",SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Georgia, "PingFang SC", SimSun, "Vollkorn",SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body .octicon {
@@ -586,7 +586,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #212121;
+  background-color: #eaecef;;
   border-radius: 10px;
 }
 .markdown-body pre code {
