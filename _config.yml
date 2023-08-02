@@ -19,10 +19,10 @@ stylesheets:
 
 # scripts loaded in the end of the body
 scripts:
-  - /js/jquery-3.4.1.min.js
-  - /js/highlight-9.13.1.min.js
+  - /js/jquery-3.7.0.min.js
+  - /js/highlight.min.js
   - /js/transition.js
-  - /js/smooth-scroll.min.js
+  # - /js/smooth-scroll.min.js
 
 hljs:
   enable: true # true to enable the plugin
@@ -36,4 +36,10 @@ hljs:
 
 # atom: atom.xml # website feed.
 
-favicon: /img/favicon.ico #修改对应文件夹图标即能修改。
+favicon: /img/favicon.ico
+
+since: 2023
+
+waline: 
+  enable: false # true to enable the waline
+  serverURL: https://waline-1-z7968183.deta.app/ 

@@ -147,7 +147,7 @@
     cursor:not-allowed
    }
    .wl-btn.primary {
-    font-family:SimSun;
+    font-family:'Noto Serif SC', SimSun;
     border-color:var(--waline-theme-color);
     background:var(--waline-theme-color);
     color:var(--waline-white)

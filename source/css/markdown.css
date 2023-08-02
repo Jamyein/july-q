@@ -1,5 +1,5 @@
 .hljs {
-  display: block;
+  display: inline-block;
   overflow-x: auto;
   padding: 0.5em;
   background: #eaecef;
@@ -25,7 +25,7 @@
 .hljs-section,
 .hljs-selector-class,
 .hljs-title {
-  color: #a6e22e;
+  color: #355f35;
 }
 .hljs-strong {
   font-weight: 700;
@@ -72,8 +72,9 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #24292e;
-  line-height: 1.5;
+  line-height: 35.15px;
   word-wrap: break-word;
+  font-weight: 300;
 }
 .markdown-body .pl-c {
   color: #6a737d;
@@ -230,11 +231,12 @@
   line-height: inherit;
 }
 .markdown-body a {
-  color: #008B8B;
+  color: #AB545A;
   text-decoration: none;
 }
 .markdown-body a:hover {
   text-decoration: underline;
+  color: #008B8B;
 }
 .markdown-body strong {
   font-weight: 600;
@@ -275,27 +277,27 @@
 }
 .markdown-body h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h3 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h4 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h5 {
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body h6 {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .markdown-body p {
   margin-top: 0;
@@ -324,13 +326,13 @@
   margin-left: 0;
 }
 .markdown-body code {
-  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Consolas, 'Noto Serif Sc', serif, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Georgia, "PingFang SC", SimSun, "Vollkorn",SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "PingFang SC", 'Noto Serif SC', serif,  SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body .octicon {
@@ -408,7 +410,8 @@
   line-height: 1.8;
   border-radius: 8px;
   background: #FEECD8;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 .markdown-body blockquote > :first-child {
   margin-top: 0;

@@ -1,11 +1,25 @@
 <h1 align="center">July</h1>
 
 <h3 align="center">A minimalist, focused writing Hexo theme.</h3>
-<center>基于wisp-x大佬的july主题进行了符合个人的一些小修改，并保存在这里当作备份。😀</center>
+
+<p align="center">
+  <img alt="star" src="https://img.shields.io/github/stars/wisp-x/hexo-theme-july.svg"/>
+  <img alt="fork" src="https://img.shields.io/github/forks/wisp-x/hexo-theme-july.svg"/>
+  <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
+    <img alt="travis-ci" src="https://travis-ci.org/Shen-Yu/hexo-theme-ayer.svg?branch=master">
+  </a>
+  <a href="http://standardjs.com" target="_blank" rel="noopener noreferrer">
+    <img alt="js-standard-style" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
+  </a>
+  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.0-blue.svg">
+  </a>
+ <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
+</p>
 
 ---
 
-![](./source/img/preview.jpg)
+<center><img src="./source/img/preview.png"></center>
 
 Install
 ---

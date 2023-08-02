@@ -1,27 +1,13 @@
-/*@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url(https://fonts.gstatic.com/s/vollkorn/v10/0yb7GDoxxrvAnPhYGxksWE8erA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url(https://fonts.gstatic.com/s/vollkorn/v10/0yb4GDoxxrvAnPhYGxksUPQ7vBcU_Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Vollkorn';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap');
+
+/*@font-face{
+  font-family: 'NotoSerifSc';
   font-style: normal;
-  font-weight: 400;
-  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v10/0yb9GDoxxrvAnPhYGxkpaEg.ttf) format('truetype');
+  font-display: wrap;
+  src: url('../font/NotoSerifSc.woff2');   
 }
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Vollkorn Bold'), local('Vollkorn-Bold'), url(https://fonts.gstatic.com/s/vollkorn/v10/0yb6GDoxxrvAnPhYGxGSTVg5jBA.ttf) format('truetype');
-}*/
+*/
+
 *,
 :after,
 :before {
@@ -85,12 +71,16 @@ html {
   color: #656565;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
+  font-family: "PingFang SC", Palatino, 'Noto Serif SC', serif, 'Times New Roman', Times;
+  font-weight: 300;
+  scroll-behavior: smooth;
 }
 body {
   overflow-y: scroll;
-  font: 1.1em Georgia, "PingFang SC", "Vollkorn", Palatino, Times, "Noto Serif SC", Lusitana, serif, "PT Sans", source-han-sans-simplified-c, "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei", SimSun;
+  font: 1.1em  "PingFang SC", Palatino, 'Noto Serif SC', serif, "PT Sans", Times,  source-han-sans-simplified-c, "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei", SimSun;
+  font-weight: 300;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: justify;
 }
 .container {
@@ -161,7 +151,7 @@ body {
   background-color: #363636;
 }*/
 #menu-outer.fade-show #menu-inner a {
-  color: black;
+  color: #7D7C7C;
 }
 #content-outer {
   width: 90%;
@@ -263,7 +253,8 @@ ul.archive-list {
   color: #008B8B;
 }
 #bottom-outer {
-  margin: 8rem auto;
+  font-size: 1rem;
+  margin: 8rem auto 5px;
   text-align: center;
 }
 #bottom-outer #bottom-inner {
@@ -273,14 +264,16 @@ article#post > h1#post-title {
   color: #4c4c4c;
   font-size: 1.8rem;
 }
-article#post > #post-date {
-  display: flex;
+article#post > #post-memu {
+  display: inline-table;
   color: #7D7C7C;
   margin: 0.5rem 0 2rem
 }
 article#post > #post-content {
-  line-height: 1.625;
-  color: #2d3748;
+  line-height: 35.15px;
+  letter-spacing: .05ex;
+  color: #444444;
+  font-size: 19px;
 }
 #paginator {
   text-align: center;
@@ -290,9 +283,42 @@ article#post > #post-content {
 #paginator a {
   margin: 0 0.3rem;
 }
-.post-tags {
-  display: flex;
-  padding-left: 10px;
+.post-tags a,
+.post-author a {
+  color: #7D7C7C;
+  text-decoration: none;
+}
+.post-tags a:hover,
+.post-author a:hover {
+  color: #815463;
+  text-decoration: underline;
+}
+.post-tags a:not([disabled]),
+.post-author a:not([disabled]),
+.post-tags a:not([disabled]):hover,
+.post-author a:not([disabled]):hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.post-tags a:not([disabled])::after,
+.post-author a:not([disabled])::after,
+.post-tags a:not([disabled]):hover::after,
+.post-author a:not([disabled]):hover::after {
+  transition: width 0.35s;
+  content: "";
+  right: 0;
+  width: 0;
+  bottom: -2px;
+  position: absolute;
+  border-bottom: 1px solid;
+}
+.post-tags a:not([disabled]):hover::after,
+.post-author a:not([disabled]):hover::after,
+.post-tags a:not([disabled]):hover:hover::after,
+.post-author a:not([disabled]):hover:hover::after {
+  left: 0;
+  width: 100%;
 }
 .markdown-body {
   margin: 0 auto;
@@ -300,7 +326,7 @@ article#post > #post-content {
   line-height: 1.8;
   text-align: justify;
   word-wrap: break-word;
-  /*word-break: break-all;*/
+  word-break: break-all;
 }
 .markdown-body .highlight pre .language-seq,
 .markdown-body pre .language-seq,
