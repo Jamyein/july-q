@@ -1,5 +1,5 @@
 .hljs {
-  display: inline-block;
+  display: block;
   overflow-x: auto;
   padding: 0.5em;
   background: #eaecef;
@@ -74,6 +74,7 @@
   color: #24292e;
   line-height: 35.15px;
   word-wrap: break-word;
+  hyphens: manual;
   font-weight: 300;
 }
 .markdown-body .pl-c {
@@ -274,6 +275,7 @@
 .markdown-body h6 {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: 'ZhuqueFangsong',"PingFang SC", Palatino, 'Noto Serif SC', serifsans-serif;;
 }
 .markdown-body h1 {
   font-size: 2rem;
@@ -410,22 +412,21 @@
   line-height: 1.8;
   border-radius: 8px;
   background: #FEECD8;
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
-.markdown-body blockquote > :first-child {
-  margin-top: 0;
-}
-.markdown-body blockquote > :last-child {
-  margin-bottom: 0;
+
+.markdown-body blockquote:before {
+  content: '👉';
+	left: 0.5rem;
+	top: 2.2rem;
+  position: absolute;
 }
 .markdown-body kbd {
-  display: inline-block;
+  display: block;
   padding: 3px 5px;
   font-size: 0.6875rem;
   line-height: 0.625rem;
   color: #444d56;
-  vertical-align: middle;
   background-color: #fafbfc;
   border: solid 1px #c6cbd1;
   border-bottom-color: #959da5;
@@ -505,6 +506,7 @@
 }
 .markdown-body li {
   word-wrap: break-all;
+  text-indent: 0em;
 }
 .markdown-body li > p {
   margin-top: 16px;

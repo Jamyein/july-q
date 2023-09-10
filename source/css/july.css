@@ -7,7 +7,12 @@
   src: url('../font/NotoSerifSc.woff2');   
 }
 */
-
+@font-face{
+font-family: 'ZhuqueFangsong';
+font-style: normal;
+font-display: wrap;
+src: url('../font/ZhuqueFangsong.ttf');   
+}
 *,
 :after,
 :before {
@@ -259,21 +264,24 @@ ul.archive-list {
 }
 #bottom-outer #bottom-inner {
   color: #a2a2a2;
+  font-family:'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
 }
 article#post > h1#post-title {
   color: #4c4c4c;
   font-size: 1.8rem;
+  font-family: 'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
 }
 article#post > #post-memu {
   display: inline-table;
   color: #7D7C7C;
-  margin: 0.5rem 0 2rem
+  font-size: 16px;
+  margin: 0.5rem 0 2rem;
+  font-family: 'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
 }
 article#post > #post-content {
   line-height: 35.15px;
   letter-spacing: .05ex;
   color: #444444;
-  font-size: 19px;
 }
 #paginator {
   text-align: center;
@@ -283,27 +291,45 @@ article#post > #post-content {
 #paginator a {
   margin: 0 0.3rem;
 }
-.post-tags a,
+.post-author,
+.post-date {
+  display: flex;
+  align-items: center;
+}
+#post-date {
+  margin-left: 5px;
+}
+.page-author {
+  margin-left: 5px;
+}
+.post-date-cayegories{
+display: flex;
+align-items: center;
+}
+.post-categories {
+  margin-left: 5px;
+}
+.post-categories a,
 .post-author a {
   color: #7D7C7C;
   text-decoration: none;
 }
-.post-tags a:hover,
+.post-categories a:hover,
 .post-author a:hover {
   color: #815463;
   text-decoration: underline;
 }
-.post-tags a:not([disabled]),
+.post-categories a:not([disabled]),
 .post-author a:not([disabled]),
-.post-tags a:not([disabled]):hover,
+.post-categories a:not([disabled]):hover,
 .post-author a:not([disabled]):hover {
   position: relative;
   text-decoration: none;
 }
 
-.post-tags a:not([disabled])::after,
+.post-categories a:not([disabled])::after,
 .post-author a:not([disabled])::after,
-.post-tags a:not([disabled]):hover::after,
+.post-categories a:not([disabled]):hover::after,
 .post-author a:not([disabled]):hover::after {
   transition: width 0.35s;
   content: "";
@@ -313,9 +339,9 @@ article#post > #post-content {
   position: absolute;
   border-bottom: 1px solid;
 }
-.post-tags a:not([disabled]):hover::after,
+.post-categories a:not([disabled]):hover::after,
 .post-author a:not([disabled]):hover::after,
-.post-tags a:not([disabled]):hover:hover::after,
+.post-categories a:not([disabled]):hover:hover::after,
 .post-author a:not([disabled]):hover:hover::after {
   left: 0;
   width: 100%;
@@ -326,7 +352,7 @@ article#post > #post-content {
   line-height: 1.8;
   text-align: justify;
   word-wrap: break-word;
-  word-break: break-all;
+  hyphens: manual;
 }
 .markdown-body .highlight pre .language-seq,
 .markdown-body pre .language-seq,

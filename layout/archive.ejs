@@ -1,7 +1,7 @@
 
 <%
 const categoriesList = list_categories({ show_count: false });
-const tagsList = list_tags({ show_count: false });
+// const tagsList = list_tags({ show_count: false });
 const archivesList = list_archives({ show_count: false });
 %>
 
@@ -20,16 +20,6 @@ const archivesList = list_archives({ show_count: false });
       <h3 class="widget-title">Categories</h3>
       <% if (categoriesList !== "") { %>
         <%-categoriesList%>
-      <% } else { %>
-        <p>None.</p>
-      <% } %>
-    </aside>
-    <br>
-
-    <aside>
-      <h3 class="widget-title">Tags</h3>
-      <% if (tagsList !== "") { %>
-        <%-tagsList%>
       <% } else { %>
         <p>None.</p>
       <% } %>
