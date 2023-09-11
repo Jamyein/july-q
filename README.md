@@ -6,6 +6,8 @@
 
 <center><img src="./source/img/preview.jpg"></center>
 
+### 暂时不建议更新 Hexo 至7.0版本，会导致代码块样式不适配！！！
+
 魔改内容
 ---
 1. 增加 waline 评论系统
