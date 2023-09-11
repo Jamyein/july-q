@@ -1,6 +1,6 @@
 # July-Q
 
-### 一个极简的 HEXO 主题，魔改自 [July](https://github.com/wisp-x/hexo-theme-july)。
+### 魔改自 [July](https://github.com/wisp-x/hexo-theme-july)。
 
 ---
 
