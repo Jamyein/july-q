@@ -23,7 +23,7 @@
     --waline-info-font-size: 0.625em;
     --waline-border: 1px solid var(--waline-border-color);
     --waline-avatar-radius: 50%;
-    --waline-box-shadow: none
+    --waline-box-shadow: none;
    }
    [data-waline] {
     font-size:var(--waline-font-size);
@@ -133,7 +133,8 @@
     cursor:pointer;
     user-select:none;
     transition-duration:.4s;
-    touch-action:manipulation
+    touch-action:manipulation;
+    font-family: 'Noto Serif SC', serif;
    }
    .wl-btn:hover,
    .wl-btn:active {
@@ -147,7 +148,7 @@
     cursor:not-allowed
    }
    .wl-btn.primary {
-    font-family:'Noto Serif SC', SimSun;
+    font-family:'Noto Serif SC', serif;
     border-color:var(--waline-theme-color);
     background:var(--waline-theme-color);
     color:var(--waline-white)
@@ -300,7 +301,8 @@
     border-radius:.5em;
     background:rgba(0,0,0,0);
     font-size:.875em;
-    resize:vertical
+    resize:vertical;
+    font-family: 'Noto Serif SC', serif;
    }
    .wl-editor,
    .wl-input {
@@ -338,7 +340,7 @@
     position:relative;
     display:flex;
     flex-wrap:wrap;
-    margin:.5em .75em
+    margin:.5em .75em;
    }
    .wl-actions {
     display:flex;
@@ -943,8 +945,7 @@
     background:none;
     color:#ccc;
     font-size:1em;
-    font-family:SimSun, Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
-    text-align:left;
+    font-family: Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
     white-space:pre;
     word-spacing:normal;
     word-wrap:normal;

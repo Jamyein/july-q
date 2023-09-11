@@ -38,8 +38,6 @@ hljs:
 
 favicon: /img/favicon.ico
 
-since: 2023
-
 waline: 
   enable: true # true to enable the waline
   serverURL: https://waline-1-z7968183.deta.app/ 
