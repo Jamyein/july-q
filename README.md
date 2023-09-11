@@ -1,38 +1,36 @@
-<h1 align="center">July</h1>
+# July-Q
 
-<h3 align="center">A minimalist, focused writing Hexo theme.</h3>
-
-<p align="center">
-  <img alt="star" src="https://img.shields.io/github/stars/wisp-x/hexo-theme-july.svg"/>
-  <img alt="fork" src="https://img.shields.io/github/forks/wisp-x/hexo-theme-july.svg"/>
-  <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
-    <img alt="travis-ci" src="https://travis-ci.org/Shen-Yu/hexo-theme-ayer.svg?branch=master">
-  </a>
-  <a href="http://standardjs.com" target="_blank" rel="noopener noreferrer">
-    <img alt="js-standard-style" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
-  </a>
-  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.0-blue.svg">
-  </a>
- <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
-</p>
+### 一个极简的 HEXO 主题，魔改自 [July](https://github.com/wisp-x/hexo-theme-july)。
 
 ---
 
-<center><img src="./source/img/preview.png"></center>
+<center><img src="./source/img/preview.jpg"></center>
+
+魔改内容
+---
+1. 增加 waline 评论系统
+2. 修改超链接色彩
+3. 增加链接色彩
+4. 增加文章底部导航栏
+5. 修改主页文章排列样式
+6. 增加文章表头作者和分类等信息
+7. 修改字体为思源宋体
+8. 去除图片阴影
+9. 修改引用和代码块样式
+10. 修复在其他浏览器中CSS文件加载失败的问题
 
 Install
 ---
 ```
-$ git clone https://github.com/wisp-x/hexo-theme-july.git themes/july
+$ git clone https://github.com/Jamyein/july-q.git themes/july
 ```
 
 Enable
 ---
-Modify theme setting in _config.yml to july
+Modify theme setting in _config.yml to july-q
 ```
 ...
-theme: july
+theme: july-q
 ...
 ```
 
@@ -67,26 +65,26 @@ language: zh-CN
 
 # main menu navigation
 menu:
-  Home: /index.html
-  Archives: /archives/index.html
-  About: /about/index.html
+  主页: /index.html
+  归档: /archives/index.html
+  关于: /about/index.html
 
 site:
-  # banner: /img/banner.jpg # banner map of website. (please annotation this line if you don't need it)
-  avatar: https://www.gravatar.com/avatar/7a585313ed855e8d652cbb3154a6056e?s=300&d=mm&r=g # head portrait.
-  icp: 皖ICP备16011445号 # E-ICP prepared No.
+  banner: # banner map of website. (please annotation this line if you don't need it)
+  avatar:  # head portrait. Url or local file.
 
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/markdown.css
   - /css/july.css
+  - /css/waline.css # if use waline,please delete the "#" to use the waline.css
 
 # scripts loaded in the end of the body
 scripts:
-  - /js/jquery-3.4.1.min.js
-  - //cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js
+  - /js/jquery-3.7.0.min.js
+  - /js/highlight.min.js
   - /js/transition.js
-  - /js/smooth-scroll.min.js
+  # - /js/smooth-scroll.min.js
 
 hljs:
   enable: true # true to enable the plugin
@@ -99,6 +97,12 @@ hljs:
     copy: Copy Code
 
 # atom: atom.xml # website feed.
+
+favicon: /img/favicon.ico 
+
+waline: 
+  enable: true # true to enable the waline
+  serverURL: # your waline server site
 ```
 
 Licence
