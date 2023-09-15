@@ -97,33 +97,51 @@ body {
   margin: 0 auto;
 }
 #banner-outer {
+  position: relative;
+  height: 40%;
   margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 6em;
+  text-align: center;
 }
 
 #banner-outer #avatar {
+  position: absolute;
+  bottom: 2rem;
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
   left: 50%;
-  margin-bottom: 1em;
+  transform: translateX(-50%);
 }
-#banner-outer.author-name {
+#banner-outer #author-name {
   font-size: 1.1em;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-#banner-outer.author-bio {
+#banner-outer #author-bio {
   font-size: 17px;
-  line-height: 1.4;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 #banner-outer.fade-out {
   transition: all 1s;
   height: 0;
   margin-bottom: 0;
 }
-#banner-outer.fade-out #avatar {
+#banner-outer.fade-out #avatar{
+  transition: all 0.5s;
+  bottom: 5rem;
+}
+#banner-outer.fade-out #author-name{
+  transition: all 0.5s;
+  bottom: 3rem;
+}
+#banner-outer.fade-out #author-bio {
   transition: all 0.5s;
   bottom: 1rem;
 }
