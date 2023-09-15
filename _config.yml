@@ -8,14 +8,14 @@ menu:
   关于: /about/index.html
 
 site:
-  banner: # https://s3.bmp.ovh/imgs/2023/08/08/68b86e3cecbcb97d.jpg # banner map of website. (please annotation this line if you don't need it)
-  avatar: # https://s3.bmp.ovh/imgs/2023/08/18/250dc7977888bde2.png # head portrait.
+  avatar: https://s3.bmp.ovh/imgs/2023/08/18/250dc7977888bde2.png # head portrait.
+  bio: '每个人都是作者，书写一本叫人生的书。'
 
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/markdown.css
   - /css/july.css
-  # - /css/waline.css # if use waline,please delete the "#" to use the waline.css
+  - /css/waline.css # if use waline,please delete the "#" to use the waline.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -39,5 +39,5 @@ hljs:
 favicon: /img/favicon.ico
 
 waline: 
-  enable: false # true to enable the waline
-  serverURL: # your waline server site
+  enable: true # true to enable the waline
+  serverURL: https://waline-1-z7968183.deta.app/ 

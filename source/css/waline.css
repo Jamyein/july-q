@@ -134,7 +134,7 @@
     user-select:none;
     transition-duration:.4s;
     touch-action:manipulation;
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Noto Serif SC','ZhuqueFangsong', serif;
    }
    .wl-btn:hover,
    .wl-btn:active {
@@ -148,7 +148,7 @@
     cursor:not-allowed
    }
    .wl-btn.primary {
-    font-family:'Noto Serif SC', serif;
+    font-family:'Noto Serif SC', 'ZhuqueFangsong', serif;
     border-color:var(--waline-theme-color);
     background:var(--waline-theme-color);
     color:var(--waline-white)
@@ -302,7 +302,7 @@
     background:rgba(0,0,0,0);
     font-size:.875em;
     resize:vertical;
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Noto Serif SC', 'ZhuqueFangsong', serif;
    }
    .wl-editor,
    .wl-input {

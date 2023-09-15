@@ -76,6 +76,7 @@
   word-wrap: break-word;
   hyphens: manual;
   font-weight: 300;
+  font-size: 20px;
 }
 .markdown-body .pl-c {
   color: #6a737d;
@@ -328,13 +329,13 @@
   margin-left: 0;
 }
 .markdown-body code {
-  font-family: SFMono-Regular, Consolas, 'Noto Serif Sc', serif, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Consolas, 'Noto Serif Sc', 'ZhuqueFangsong', serif, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "PingFang SC", 'Noto Serif SC', serif,  SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "PingFang SC", 'Noto Serif SC', 'ZhuqueFangsong', serif,  SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body .octicon {

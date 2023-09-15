@@ -1,6 +1,6 @@
 # July-Q
 
-### 一个极简的 HEXO 主题，魔改自 [July](https://github.com/wisp-x/hexo-theme-july)。
+### 魔改自 [July](https://github.com/wisp-x/hexo-theme-july)。
 
 ---
 
@@ -20,6 +20,8 @@
 8. 去除图片阴影
 9. 修改引用和代码块样式
 10. 修复在其他浏览器中CSS文件加载失败的问题
+11. 去掉了banner头图
+12. 添加主页作者标签和格言
 
 Install
 ---
