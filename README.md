@@ -6,10 +6,11 @@
 
 <center><img src="./source/img/preview.jpg"></center>
 
-### 暂时不建议更新 Hexo 至7.0版本，会导致代码块样式不适配！！！
+### ~~暂时不建议更新 Hexo 至7.0版本，会导致代码块样式不适配！！！~~
 
 魔改内容
----
+--------
+
 1. 增加 waline 评论系统
 2. 修改超链接色彩
 3. 增加链接色彩
@@ -24,14 +25,17 @@
 12. 添加主页作者标签和格言
 
 Install
----
+-------
+
 ```
 $ git clone https://github.com/Jamyein/july-q.git themes/july
 ```
 
 Enable
----
+------
+
 Modify theme setting in _config.yml to july-q
+
 ```
 ...
 theme: july-q
@@ -39,8 +43,10 @@ theme: july-q
 ```
 
 Disable
----
+-------
+
 The july theme has a built-in highlight plug-in. In order to avoid conflicts, you need to turn off the highlight of the system.
+
 ```
 ...
 highlight:
@@ -49,20 +55,23 @@ highlight:
 ```
 
 Create Page
----
+-----------
+
 ```
 $ hexo new page about
 ```
 
 Update
----
+------
+
 ```
 cd themes/july
 git pull
 ```
 
 Configuration
----
+-------------
+
 ```
 # html lang
 language: zh-CN
@@ -110,5 +119,6 @@ waline:
 ```
 
 Licence
----
+-------
+
 MIT
