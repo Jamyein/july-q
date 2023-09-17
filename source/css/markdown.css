@@ -262,7 +262,7 @@
 }
 .markdown-body table {
   border-spacing: 0;
-  border-collapse: collapse;
+  /*border-collapse: collapse;*/
 }
 .markdown-body td,
 .markdown-body th {
@@ -540,7 +540,7 @@
 .markdown-body table td,
 .markdown-body table th {
   padding: 6px 13px;
-  border: 1px solid #dfe2e5;
+  /*border: 1px solid #dfe2e5;*/
 }
 .markdown-body table tr {
   background-color: #fff;
