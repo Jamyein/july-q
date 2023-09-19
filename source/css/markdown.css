@@ -233,12 +233,12 @@
   line-height: inherit;
 }
 .markdown-body a {
-  color: #AB545A;
+  color: #ff4f5b;
   text-decoration: none;
 }
 .markdown-body a:hover {
   text-decoration: underline;
-  color: #008B8B;
+  color: #fd3c84;
 }
 .markdown-body strong {
   font-weight: 600;
@@ -425,7 +425,7 @@
 }
 */
 .markdown-body blockquote {
-  padding: 50px 80px 10px;
+  padding: 50px 30px 10px;
   position: relative;
   line-height: 1.4;
   font-size: 17.6px;
@@ -438,13 +438,15 @@
 .markdown-body blockquote:before {
   content: "";
   top: 20px;
-  left: 50%;
-  margin-left: -68px;
+  left: 0;
+  right: 0;
+  margin: auto;
   position: absolute;
-  border-bottom: 3px solid #ffce96;
+  border-bottom: 3px solid #ff4f5b;
   height: 3px;
   width: 100px;
 }
+/*
 .markdown-body blockquote::after {
   content: "";
   top: 16px;
@@ -455,6 +457,7 @@
   height: 3px;
   width: 100px;
 }
+*/
 .markdown-body kbd {
   display: block;
   padding: 3px 5px;

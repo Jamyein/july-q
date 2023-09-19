@@ -23,7 +23,7 @@ a:focus,
 a:hover {
   transition: 0.35s;
   text-decoration: none;
-  color: #AB545A;
+  color: #ff4f5b;
 }
 a:focus {
   outline-style: none;
@@ -93,7 +93,8 @@ body {
 }
 #menu-outer,
 #content-outer,
-#bottom-outer {
+#bottom-outer,
+#social-link {
   margin: 0 auto;
 }
 #banner-outer {
@@ -135,19 +136,42 @@ body {
 }
 #banner-outer.fade-out #avatar{
   transition: all 0.5s;
-  bottom: 5rem;
+  bottom: 7rem;
 }
 #banner-outer.fade-out #author-name{
   transition: all 0.5s;
-  bottom: 3rem;
+  bottom: 5rem;
 }
 #banner-outer.fade-out #author-bio {
+  transition: all 0.5s;
+  bottom: 3rem;
+}
+#social-link {
+  position: relative;
+  text-align: center;
+  height: 5%;
+}
+#social-link #scial-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+#social-link #scial-link a{
+padding: 3px;
+}
+#social-link.fade-in {
+  transition: all 1s;
+  height: 0;
+  margin-bottom: 0;
+}
+#social-link.fade-in #scial-link{
   transition: all 0.5s;
   bottom: 1rem;
 }
 #menu-outer {
   padding: 8px;
-  background-color: transparent;
+  /*background-color: transparent;*/
 }
 #menu-outer #menu-inner {
   text-align: center;
@@ -171,7 +195,7 @@ body {
 }
 #content-outer {
   width: 90%;
-  margin: 2rem auto;
+  margin: 10px auto;
 }
 .recent-posts,
 .archivecs,
@@ -190,7 +214,7 @@ body {
 #content-outer #content-inner .category-item,
 #content-outer #content-inner .tag-item {
   line-height: 1.6;
-  font-size: 18.6px;
+  font-size: 18px;
   
 }
 
@@ -205,7 +229,7 @@ body {
 #content-outer #content-inner .archive-item a:hover,
 #content-outer #content-inner .category-item a:hover,
 #content-outer #content-inner .tag-item a:hover {
-  color: #815463;
+  color: #ff4f5b;
   text-decoration: underline;
 }
 #content-outer #content-inner .recent-post-item a:not([disabled]),
@@ -267,7 +291,6 @@ body {
 }
 ul.archive-list {
   list-style: none;
-  color: #008B8B;
 }
 #bottom-outer {
   font-size: 1rem;
@@ -328,7 +351,7 @@ align-items: center;
 }
 .post-categories a:hover,
 .post-author a:hover {
-  color: #815463;
+  color: #ff4f5b;
   text-decoration: underline;
 }
 .post-categories a:not([disabled]),
@@ -482,7 +505,7 @@ align-items: center;
 }
 .post-nav .post-nav-item:hover .post-title,
 .post-nav .post-nav-item:focus .post-title {
-  color: #AB545A;
+  color: #ff4f5b;
   opacity: 0.9;
 }
 .post-nav .post-nav-item .nav-arrow {

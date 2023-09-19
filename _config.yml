@@ -9,13 +9,13 @@ menu:
 
 site:
   avatar: https://s3.bmp.ovh/imgs/2023/08/18/250dc7977888bde2.png # head portrait.
-  bio: '每个人都是作者，书写一本叫人生的书。'
+  bio: '世界很大，所知甚少。'
 
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/markdown.css
   - /css/july.css
-  - /css/waline.css # if use waline,please delete the "#" to use the waline.css
+  # - /css/waline.css # if use waline,please delete the "#" to use the waline.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -39,5 +39,5 @@ hljs:
 favicon: /img/favicon.ico
 
 waline: 
-  enable: true # true to enable the waline
+  enable: false # true to enable the waline
   serverURL: https://waline-1-z7968183.deta.app/ 
