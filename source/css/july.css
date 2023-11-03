@@ -1,17 +1,41 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap');*/
-/*@font-face{
-  font-family: 'NotoSerifSc';
+
+/* noto-serif-sc-300 - chinese-simplified */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif SC';
   font-style: normal;
-  font-display: wrap;
-  src: url('../font/NotoSerifSc.woff2');   
+  font-weight: 300;
+  src: url('../font/noto-serif-sc-v22-chinese-simplified-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-*/ 
-@font-face{
-font-family: 'ZhuqueFangsong';
-font-style: normal;
-font-display: wrap;
-src: url('../font/ZhuqueFangsong.ttf')
+
+/* noto-serif-sc-regular - chinese-simplified */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/noto-serif-sc-v22-chinese-simplified-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* noto-serif-sc-500 - chinese-simplified */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/noto-serif-sc-v22-chinese-simplified-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-serif-sc-700 - chinese-simplified */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/noto-serif-sc-v22-chinese-simplified-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 *,
 :after,
 :before {
@@ -23,11 +47,10 @@ a:focus,
 a:hover {
   transition: 0.35s;
   text-decoration: none;
-  color: #ff4f5b;
+  color: #AB545A;
 }
 a:focus {
   outline-style: none;
-  -moz-outline-style: none;
 }
 audio,
 body,
@@ -75,7 +98,7 @@ html {
   color: #656565;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
-  font-family: "PingFang SC", Palatino, 'Noto Serif SC', 'ZhuqueFangsong', serif, 'Times New Roman', Times;
+  font-family: "PingFang SC", Palatino, 'Noto Serif SC', 'ZhuqueFangsong', serif, "Microsoft YaHei", 'Times New Roman', Times;
   font-weight: 300;
   scroll-behavior: smooth;
   font-size: 18px;
@@ -93,18 +116,17 @@ body {
 }
 #menu-outer,
 #content-outer,
-#bottom-outer,
+#bottom-outer-in,
 #social-link {
   margin: 0 auto;
 }
-#banner-outer {
+#the-front-face {
   position: relative;
-  height: 40%;
-  margin-bottom: 3rem;
+  height: 40% ;
   text-align: center;
 }
 
-#banner-outer #avatar {
+#the-front-face #avatar {
   position: absolute;
   bottom: 2rem;
   width: 9rem;
@@ -113,7 +135,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#banner-outer #author-name {
+
+#the-front-face #author-name {
   font-size: 1.1em;
   position: absolute;
   bottom: -5px;
@@ -121,7 +144,30 @@ body {
   right: 0;
   margin: auto;
 }
-#banner-outer #author-bio {
+
+#the-front-face.fade-out {
+  transition: all 1s;
+  height: 0 ;
+  margin-bottom: 0;
+}
+
+#the-front-face.fade-out #avatar{
+  transition: all 0.5s;
+  bottom: 7rem;
+}
+
+#the-front-face.fade-out #author-name{
+  transition: all 0.5s;
+  bottom: 5rem;
+}
+
+#bio {
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#bio #author-bio {
   font-size: 17px;
   position: absolute;
   bottom: -2rem;
@@ -129,23 +175,16 @@ body {
   right: 0;
   margin: auto;
 }
-#banner-outer.fade-out {
+#bio.fade-out {
   transition: all 1s;
-  height: 0;
+  height: 0 ;
   margin-bottom: 0;
 }
-#banner-outer.fade-out #avatar{
-  transition: all 0.5s;
-  bottom: 7rem;
-}
-#banner-outer.fade-out #author-name{
-  transition: all 0.5s;
-  bottom: 5rem;
-}
-#banner-outer.fade-out #author-bio {
+#bio.fade-out #author-bio{
   transition: all 0.5s;
   bottom: 3rem;
 }
+
 #social-link {
   position: relative;
   text-align: center;
@@ -211,72 +250,25 @@ padding: 3px;
 }
 #content-outer #content-inner .recent-post-item,
 #content-outer #content-inner .archive-item,
-#content-outer #content-inner .category-item,
-#content-outer #content-inner .tag-item {
-  line-height: 1.6;
-  font-size: 18px;
-  
+#content-outer #content-inner .category-item {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.25rem;
 }
-
 #content-outer #content-inner .recent-post-item a,
 #content-outer #content-inner .archive-item a,
-#content-outer #content-inner .category-item a,
-#content-outer #content-inner .tag-item a {
+#content-outer #content-inner .category-item a{
   color: #1a202c;
-  text-decoration: none;
-}
+} 
 #content-outer #content-inner .recent-post-item a:hover,
 #content-outer #content-inner .archive-item a:hover,
-#content-outer #content-inner .category-item a:hover,
-#content-outer #content-inner .tag-item a:hover {
-  color: #ff4f5b;
-  text-decoration: underline;
-}
-#content-outer #content-inner .recent-post-item a:not([disabled]),
-#content-outer #content-inner .archive-item a:not([disabled]),
-#content-outer #content-inner .category-item a:not([disabled]),
-#content-outer #content-inner .tag-item a:not([disabled]),
-#content-outer #content-inner .archive-item a:not([disabled]):hover,
-#content-outer #content-inner .category-item a:not([disabled]):hover,
-#content-outer #content-inner .tag-item a:not([disabled]):hover,
-#content-outer #content-inner .recent-post-item a:not([disabled]):hover {
-  position: relative;
-  text-decoration: none;
-}
-#content-outer #content-inner .recent-post-item a:not([disabled])::after,
-#content-outer #content-inner .archive-item a:not([disabled])::after,
-#content-outer #content-inner .category-item a:not([disabled])::after,
-#content-outer #content-inner .tag-item a:not([disabled])::after,
-#content-outer #content-inner .category-item a:not([disabled]):hover::after,
-#content-outer #content-inner .archive-item a:not([disabled]):hover::after,
-#content-outer #content-inner .tag-item a:not([disabled]):hover::after,
-#content-outer #content-inner .recent-post-item a:not([disabled]):hover::after {
-  transition: width 0.35s;
-  content: "";
-  right: 0;
-  width: 0;
-  bottom: -2px;
-  position: absolute;
-  border-bottom: 1px solid;
-}
-#content-outer #content-inner .recent-post-item a:not([disabled]):hover::after,
-#content-outer #content-inner .archive-item a:not([disabled]):hover::after,
-#content-outer #content-inner .category-item a:not([disabled]):hover::after,
-#content-outer #content-inner .tag-item a:not([disabled]):hover::after,
-#content-outer #content-inner .category-item a:not([disabled]):hover:hover::after,
-#content-outer #content-inner .tag-item a:not([disabled]):hover:hover::after,
-#content-outer #content-inner .archive-item a:not([disabled]):hover:hover::after,
-#content-outer #content-inner .recent-post-item a:not([disabled]):hover:hover::after {
-  left: 0;
-  width: 100%;
+#content-outer #content-inner .category-item a:hover {
+  color: #718096;
 }
 #content-outer #content-inner .recent-post-item time,
 #content-outer #content-inner .archive-item time,
-#content-outer #content-inner .category-item time,
-#content-outer #content-inner .tag-item time {
-  margin-right: 20px;
+#content-outer #content-inner .category-item time {
   font-size: 1rem;
-  line-height: 1.6;
   color: #a0aec0;
 }
 #content-outer #content-inner #archive {
@@ -292,12 +284,12 @@ padding: 3px;
 ul.archive-list {
   list-style: none;
 }
-#bottom-outer {
+#bottom-outer-in {
   font-size: 1rem;
   margin: 8rem auto 5px;
   text-align: center;
 }
-#bottom-outer #bottom-inner {
+#bottom-outer-in #bottom-inner {
   color: #a2a2a2;
   font-family:'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
 }
@@ -343,6 +335,7 @@ align-items: center;
 }
 .post-categories {
   margin-left: 5px;
+  display: flex;
 }
 .post-categories a,
 .post-author a {
@@ -351,7 +344,7 @@ align-items: center;
 }
 .post-categories a:hover,
 .post-author a:hover {
-  color: #ff4f5b;
+  color: #AB545A;
   text-decoration: underline;
 }
 .post-categories a:not([disabled]),
@@ -402,7 +395,7 @@ align-items: center;
   color: #f9f9f9;
 }
 .markdown-body img {
-  margin: 0.5rem auto;
+  margin: 0.3rem auto;
   /*box-shadow: 0 0 30px #ababab;*/
   border-radius: 8px;
 }
@@ -432,7 +425,7 @@ align-items: center;
   right: 2.5rem;
   bottom: 2.5rem;
   border-radius: 50%;
-  background-color: #815463;
+  background-color: #AB545A;
   transition: all 0.3s;
   width: 30px;
   height: 30px;
@@ -505,7 +498,7 @@ align-items: center;
 }
 .post-nav .post-nav-item:hover .post-title,
 .post-nav .post-nav-item:focus .post-title {
-  color: #ff4f5b;
+  color: #AB545A;
   opacity: 0.9;
 }
 .post-nav .post-nav-item .nav-arrow {

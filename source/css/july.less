@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
 
 *, :after, :before {
   box-sizing: border-box
@@ -44,14 +43,13 @@ body {
   width: 100%;
 }
 
-#menu-outer, #content-outer, #bottom-outer, #social-link {
+#menu-outer, #content-outer, #bottom-outer-in, #social-link {
   margin: 0 auto;
 }
 
-#banner-outer {
+#the-front-face {
   position: relative;
   height: 40%;
-  margin-bottom: 8rem;
 
   #banner-image {
     display: block;
@@ -91,6 +89,33 @@ body {
       bottom: 1rem;
     }
   }
+}
+#bio {
+  position: relative;
+  height: auto ;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  #author-bio {
+    position: absolute;
+    bottom: -5rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.fade-out {
+    transition: all 1s;
+    height: 0;
+    margin-bottom: 0;
+
+    #author-bio {
+      transition: all .5s;
+      bottom: 3rem;
+    }
+}
 }
 #social-link {
   position: relative;
@@ -198,7 +223,7 @@ ul.archive-list {
   list-style: none;
 }
 
-#bottom-outer {
+#bottom-outer-in {
   margin: 8rem auto;
   text-align: center;
 

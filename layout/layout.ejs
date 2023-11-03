@@ -40,9 +40,11 @@
 </head>
 <body>
 
-<div id="banner-outer" class="">
+<div id="the-front-face" class="">
     <img src="<%= theme.site.avatar %>" id="avatar">
     <h2 id="author-name"><%=config.author%></h2>
+</div>
+<div id="bio" class="">
     <p id="author-bio"><%=theme.site.bio%></p>
 </div>
 <div id="social-link" class="">
@@ -73,7 +75,7 @@
     </div>
 </div>
 
-<div id="bottom-outer">
+<div id="bottom-outer-in">
     <div id="bottom-inner">
         <!--如果有设置theme.since，并且时间小于当前时间（年份），形式为：@ 2018 - 2019(+作者/标题)；否则默认为当前年份(+作者/标题)。 -->
     		<% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %>
@@ -81,7 +83,7 @@
             <% } else { %>
                  <%= date(new Date(), 'YYYY') %>
             <% } %>
-            <%= config.author || config.title %>
+            <%= config.title %>
     </div>
 </div>
 
@@ -98,7 +100,8 @@
 <% if (is_post()) { %>
     <script>
       $(function () {
-        $('#banner-outer').addClass('fade-out')
+        $('#the-front-face').addClass('fade-out')
+        $('#bio').addClass('fade-out')
         $('#social-link').addClass('fade-in')
         $('#menu-outer').addClass('fade-show')
 
