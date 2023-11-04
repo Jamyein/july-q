@@ -29,7 +29,7 @@ Install
 -------
 
 ```
-$ git clone https://github.com/Jamyein/july-q.git themes/july
+$ git clone https://github.com/Jamyein/july-q.git themes/july-q
 ```
 
 Enable
