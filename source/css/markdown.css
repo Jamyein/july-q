@@ -72,11 +72,11 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #24292e;
-  line-height: 35.15px;
+  line-height: 1.4em;
   word-wrap: break-word;
   hyphens: manual;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 17.8px;
 }
 .markdown-body .pl-c {
   color: #6a737d;
@@ -276,7 +276,7 @@
 .markdown-body h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'ZhuqueFangsong',"PingFang SC", Palatino, 'Noto Serif SC', serifsans-serif;;
+  font-family: "PingFang SC", Palatino, "LXGW WenKai Screen", 'Noto Serif SC', serif, sans-serif;;
 }
 .markdown-body h1 {
   font-size: 2rem;
@@ -329,13 +329,13 @@
   margin-left: 0;
 }
 .markdown-body code {
-  font-family: SFMono-Regular, Consolas, 'Noto Serif Sc', 'ZhuqueFangsong', serif, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Consolas, "LXGW WenKai Screen", sans-serif, 'Noto Serif Sc', 'ZhuqueFangsong', serif, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "PingFang SC", 'Noto Serif SC', 'ZhuqueFangsong', serif,  SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "PingFang SC", "LXGW WenKai Screen", sans-serif 'Noto Serif SC', 'ZhuqueFangsong', serif,  SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.75rem;
 }
 .markdown-body .octicon {
@@ -660,5 +660,10 @@
 }
 .markdown-body hr {
   border-bottom-color: #eee;
+}
+.markdown-body .image-caption {
+  text-align: center;
+  font-size: 17px;
+  display: block;
 }
 /*# sourceMappingURL=markdown.css.map */

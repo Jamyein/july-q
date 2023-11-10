@@ -1,41 +1,5 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap');*/
 
-/* noto-serif-sc-300 - chinese-simplified */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif SC';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../font/noto-serif-sc-v22-chinese-simplified-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-sc-regular - chinese-simplified */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif SC';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../font/noto-serif-sc-v22-chinese-simplified-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-sc-500 - chinese-simplified */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif SC';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../font/noto-serif-sc-v22-chinese-simplified-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-sc-700 - chinese-simplified */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif SC';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../font/noto-serif-sc-v22-chinese-simplified-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 *,
 :after,
 :before {
@@ -98,17 +62,17 @@ html {
   color: #656565;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
-  font-family: "PingFang SC", Palatino, 'Noto Serif SC', 'ZhuqueFangsong', serif, "Microsoft YaHei", 'Times New Roman', Times;
-  font-weight: 300;
+  font-family: "PingFang SC", Palatino, "LXGW WenKai Screen", sans-serif, 'Noto Serif SC', "Microsoft YaHei", serif, 'Times New Roman', Times;
+  font-weight: 400;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 17.8px;
 }
 body {
   overflow-y: scroll;
-  font: 1.1em  "PingFang SC", Palatino, 'Noto Serif SC', 'ZhuqueFangsong', serif, "PT Sans", Times,  source-han-sans-simplified-c, "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei", SimSun;
-  font-weight: 300;
+  font: 1.1em  "PingFang SC", Palatino, "LXGW WenKai Screen", sans-serif, 'Noto Serif SC', serif, "PT Sans", Times,  source-han-sans-simplified-c, "Hiragino Sans GB", PingHei, "Open Sans", sans-serif, Helvetica Neue, "Work Sans", "Microsoft YaHei";
+  font-weight: 400;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.4;
   text-align: justify;
 }
 .container {
@@ -137,7 +101,7 @@ body {
 }
 
 #the-front-face #author-name {
-  font-size: 1.1em;
+  font-size: 18px;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -218,7 +182,7 @@ padding: 3px;
 #menu-outer #menu-inner a {
   margin: 0 0.5rem;
   color: #718096;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 #menu-outer #menu-inner a:hover,
 #menu-outer #menu-inner a.active {
@@ -247,18 +211,20 @@ padding: 3px;
   margin-bottom: 0.5rem;
   color: #868686;
   /*margin-left: 15rem;*/
+  text-align: center;
 }
 #content-outer #content-inner .recent-post-item,
 #content-outer #content-inner .archive-item,
 #content-outer #content-inner .category-item {
   text-align: center;
-  line-height: 1.5;
   margin-top: 0.25rem;
 }
 #content-outer #content-inner .recent-post-item a,
 #content-outer #content-inner .archive-item a,
 #content-outer #content-inner .category-item a{
   color: #1a202c;
+  font-size: 17.5px;
+  line-height: 1.5;
 } 
 #content-outer #content-inner .recent-post-item a:hover,
 #content-outer #content-inner .archive-item a:hover,
@@ -268,8 +234,9 @@ padding: 3px;
 #content-outer #content-inner .recent-post-item time,
 #content-outer #content-inner .archive-item time,
 #content-outer #content-inner .category-item time {
-  font-size: 1rem;
+  font-size: 16px;
   color: #a0aec0;
+  margin-left: 6px;
 }
 #content-outer #content-inner #archive {
   text-align: center;
@@ -291,22 +258,22 @@ ul.archive-list {
 }
 #bottom-outer-in #bottom-inner {
   color: #a2a2a2;
-  font-family:'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
+  font-family: "PingFang SC", "LXGW WenKai Screen", 'Noto Serif SC', serif,"Microsoft YaHei", sans-serif;
 }
 article#post > h1#post-title {
   color: #4c4c4c;
   font-size: 2rem;
-  font-family: 'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
+  font-family: "PingFang SC", "LXGW WenKai Screen", 'Noto Serif SC', serif, "Microsoft YaHei", sans-serif;
 }
 article#post > #post-memu {
   display: inline-table;
   color: #7D7C7C;
   font-size: 16px;
   margin: 0.5rem 0 2rem;
-  font-family: 'ZhuqueFangsong',"PingFang SC", 'Noto Serif SC', serif,sans-serif;
+  font-family: "PingFang SC", "LXGW WenKai Screen", 'Noto Serif SC', serif, "Microsoft YaHei", sans-serif;
 }
 article#post > #post-content {
-  line-height: 35.15px;
+  line-height: 1.4em;
   letter-spacing: .05ex;
   color: #444444;
 }
@@ -377,7 +344,7 @@ align-items: center;
 .markdown-body {
   margin: 0 auto;
   color: #555;
-  line-height: 1.8;
+  line-height: 1.4;
   text-align: justify;
   word-wrap: break-word;
   hyphens: manual;
@@ -395,8 +362,8 @@ align-items: center;
   color: #f9f9f9;
 }
 .markdown-body img {
-  margin: 0.3rem auto;
-  /*box-shadow: 0 0 30px #ababab;*/
+  margin-top: 30px;
+  box-shadow: 0 0 30px #ababab;
   border-radius: 8px;
 }
 .markdown-body a:not([disabled]),
@@ -492,6 +459,7 @@ align-items: center;
   padding-top: 10px;
   text-decoration: none;
   box-sizing: border-box;
+  font-size: 16px;
 }
 .post-nav .post-nav-item .post-title {
   color: black;

@@ -9,13 +9,19 @@ menu:
 
 site:
   avatar: /img/avator.jpg # head portrait.
-  bio: '世界很大，所知甚少。'
+  bio: '世界很大，所知甚少。' # you can write something to show in the home index.
+
+social:
+  enable: true # true to enable the social media link, show you link to it.
+  rss: /atom.xml
+  github: https://github.com/Jamyein
+  email: https://citrusea.cc/email/index.html
 
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/markdown.css
   - /css/july.css
-  # - /css/waline.css # if use waline,please delete the "#" to use the waline.css
+  - /css/waline.css # if use waline, please delete the "#" to use the waline.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -24,20 +30,19 @@ scripts:
   - /js/transition.js
   # - /js/smooth-scroll.min.js
 
-hljs:
-  enable: true # true to enable the plugin
-  line_number: false # add line_number in frontend or backend (not recommend, have bugs in special hexo version)
-  trim_indent: backend # trim the indent of code block to prettify output. backend or front-end (recommend)
-  copy_code: true # show copy code in caption.
-  label:
-    left: Code
-    right: ':'
-    copy: Copy Code
+highlight:
+  # ...
+  theme: default
+  theme_dark: default
+prismjs:
+  # ...
+  theme: default
+  theme_dark: default
 
 # atom: atom.xml # website feed.
 
-favicon: /img/favicon.ico
+favicon: /img/favicon.ico # you can change to you ico
 
 waline: 
-  enable: false # true to enable the waline
-  serverURL: https://waline-1-z7968183.deta.app/ 
+  enable: true # true to enable the waline
+  serverURL: https://waline-1-z7968183.deta.app/ # your comment server url
