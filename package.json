@@ -4,10 +4,13 @@
   "description": "July A minimalist, focused writing Hexo theme.",
   "private": true,
   "dependencies": {
-    "hexo-filter-highlight": "^1.0.0"
+    "hexo-filter-highlight": "^1.0.0",
+    "url-parse": "^1.5.10"
   },
   "keywords": [
-    "July", "Hexo", "Themes"
+    "July",
+    "Hexo",
+    "Themes"
   ],
   "author": {
     "email": "i@wispx.cn",
